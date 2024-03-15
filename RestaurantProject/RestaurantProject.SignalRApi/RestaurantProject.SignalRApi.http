@@ -1,0 +1,6 @@
+@RestaurantProject.SignalRApi_HostAddress = http://localhost:5009
+
+GET {{RestaurantProject.SignalRApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
