@@ -14,7 +14,7 @@ namespace RestaurantProject.SignalRApi
 
             builder.Services.AddDbContext<AppDbContext>(opt =>
             {
-                opt.UseSqlServer(builder.Configuration.GetConnectionString("app"));
+                opt.UseSqlServer(builder.Configuration.GetConnectionString("mssql"));
             });
 
             builder.Services.AddControllers();

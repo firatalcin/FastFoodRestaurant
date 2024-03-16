@@ -23,4 +23,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantProject.Business\RestaurantProject.Business.csproj" />
+  </ItemGroup>
+
 </Project>
