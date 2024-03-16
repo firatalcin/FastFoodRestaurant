@@ -25,4 +25,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantProject.Entities\RestaurantProject.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
