@@ -10,8 +10,4 @@
     <ProjectReference Include="..\RestaurantProject.DataAccess\RestaurantProject.DataAccess.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Concrete\" />
-  </ItemGroup>
-
 </Project>
