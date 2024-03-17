@@ -1,8 +1,12 @@
-﻿using RestaurantProject.Core.Entities;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace RestaurantProject.Entities.Concrete
+namespace RestaurantProject.Core.DataAccess.Dtos.BookingDto
 {
-    public class Booking : BaseEntity
+    public class CreateBookingDto
     {
         public string Name { get; set; }
         public string Phone { get; set; }

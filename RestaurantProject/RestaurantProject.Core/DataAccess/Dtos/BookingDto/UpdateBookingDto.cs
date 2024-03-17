@@ -1,9 +1,8 @@
-﻿using RestaurantProject.Core.Entities;
-
-namespace RestaurantProject.Entities.Concrete
+﻿namespace RestaurantProject.Core.DataAccess.Dtos.BookingDto
 {
-    public class Booking : BaseEntity
+    public class UpdateBookingDto
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Phone { get; set; }
         public string Mail { get; set; }

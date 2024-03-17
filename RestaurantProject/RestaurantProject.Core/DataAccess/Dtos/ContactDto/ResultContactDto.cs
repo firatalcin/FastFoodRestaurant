@@ -1,9 +1,8 @@
-﻿using RestaurantProject.Core.Entities;
-
-namespace RestaurantProject.Entities.Concrete
+﻿namespace RestaurantProject.Core.DataAccess.Dtos.ContactDto
 {
-    public class Contact : BaseEntity
+    public class ResultContactDto
     {
+        public int Id { get; set; }
         public string Location { get; set; }
         public string Phone { get; set; }
         public string Mail { get; set; }

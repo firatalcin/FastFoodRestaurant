@@ -1,8 +1,6 @@
-﻿using RestaurantProject.Core.Entities;
-
-namespace RestaurantProject.Entities.Concrete
+﻿namespace RestaurantProject.Core.DataAccess.Dtos.FeatureDto
 {
-    public class Feature : BaseEntity
+    public class CreateFeatureDto
     {
         public string Title1 { get; set; }
         public string Description1 { get; set; }
@@ -10,6 +8,5 @@ namespace RestaurantProject.Entities.Concrete
         public string Description2 { get; set; }
         public string Title3 { get; set; }
         public string Description3 { get; set; }
-
     }
 }

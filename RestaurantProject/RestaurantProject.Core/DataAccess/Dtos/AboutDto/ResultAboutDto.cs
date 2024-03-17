@@ -1,8 +1,6 @@
-﻿using RestaurantProject.Core.Entities;
-
-namespace RestaurantProject.Entities.Concrete
+﻿namespace RestaurantProject.Core.DataAccess.Dtos.AboutDto
 {
-    public class About : BaseEntity
+    public class ResultAboutDto
     {
         public int Id { get; set; }
         public string ImageURL { get; set; }

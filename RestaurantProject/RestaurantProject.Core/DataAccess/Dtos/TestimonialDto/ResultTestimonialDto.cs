@@ -1,9 +1,8 @@
-﻿using RestaurantProject.Core.Entities;
-
-namespace RestaurantProject.Entities.Concrete
+﻿namespace RestaurantProject.Core.DataAccess.Dtos.TestimonialDto
 {
-    public class Testimonial : BaseEntity
+    public class ResultTestimonialDto
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Title { get; set; }
         public string Comment { get; set; }

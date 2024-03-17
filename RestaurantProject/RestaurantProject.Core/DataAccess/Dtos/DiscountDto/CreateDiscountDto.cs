@@ -1,8 +1,6 @@
-﻿using RestaurantProject.Core.Entities;
-
-namespace RestaurantProject.Entities.Concrete
+﻿namespace RestaurantProject.Core.DataAccess.Dtos.DiscountDto
 {
-    public class Discount : BaseEntity
+    public class CreateDiscountDto
     {
         public string Title { get; set; }
         public string Amount { get; set; }

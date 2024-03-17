@@ -1,12 +1,10 @@
-﻿using RestaurantProject.Core.Entities;
-
-namespace RestaurantProject.Entities.Concrete
+﻿namespace RestaurantProject.Core.DataAccess.Dtos.SocialMediaDto
 {
-    public class SocialMedia : BaseEntity
+    public class GetSocialMediaDto
     {
+        public int Id { get; set; }
         public string Title { get; set; }
         public string URL { get; set; }
         public string Icon { get; set; }
-
     }
 }
