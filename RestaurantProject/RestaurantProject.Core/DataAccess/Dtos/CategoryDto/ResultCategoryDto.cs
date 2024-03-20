@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantProject.Core.DataAccess.Dtos.CategoryDto
 {
-    public class ResultCategortDto
+    public class ResultCategoryDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
