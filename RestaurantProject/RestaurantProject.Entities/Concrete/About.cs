@@ -1,8 +1,6 @@
-﻿using RestaurantProject.Core.Entities;
-
-namespace RestaurantProject.Entities.Concrete
+﻿namespace RestaurantProject.Entities.Concrete
 {
-    public class About : BaseEntity
+    public class About 
     {
         public int Id { get; set; }
         public string ImageURL { get; set; }

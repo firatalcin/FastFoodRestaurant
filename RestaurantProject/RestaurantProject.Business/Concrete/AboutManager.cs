@@ -14,8 +14,8 @@ namespace RestaurantProject.Business.Concrete
         }
 
         public void Add(About entity)
-        {
-            _aboutDal.Add(entity);
+        {           
+            _aboutDal.Add(entity);          
         }
 
         public void Delete(About entity)

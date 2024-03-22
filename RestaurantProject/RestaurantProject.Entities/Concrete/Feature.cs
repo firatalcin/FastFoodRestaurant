@@ -1,9 +1,8 @@
-﻿using RestaurantProject.Core.Entities;
-
-namespace RestaurantProject.Entities.Concrete
+﻿namespace RestaurantProject.Entities.Concrete
 {
-    public class Feature : BaseEntity
-    {
+    public class Feature 
+    { 
+        public int Id { get; set; }
         public string Title1 { get; set; }
         public string Description1 { get; set; }
         public string Title2 { get; set; }
