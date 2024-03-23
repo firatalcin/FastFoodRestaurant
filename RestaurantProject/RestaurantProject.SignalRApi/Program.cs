@@ -25,12 +25,16 @@ namespace RestaurantProject.SignalRApi
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("mssql"));
             });
 
-            builder.Services.AddAutoMapper(typeof(AboutMapping));
+            builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             builder.Services.AddScoped<IAboutService, AboutManager>();
             builder.Services.AddScoped<IAboutDal, EfAboutDal>();
 
-            
+            builder.Services.AddScoped<IBookingDal, EfBookingDal>();
+            builder.Services.AddScoped<IBookingService, BookingManager>();
+
+            builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
+            builder.Services.AddScoped<ICategoryService, CategoryManager>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
