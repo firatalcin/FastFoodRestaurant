@@ -48,6 +48,12 @@ namespace RestaurantProject.SignalRApi
             builder.Services.AddScoped<IFeatureDal, EfFeatureDal>();
             builder.Services.AddScoped<IFeatureService, FeatureManager>();
 
+            builder.Services.AddScoped<ISocialMediaDal, EfSocialMediaDal>();
+            builder.Services.AddScoped<ISocialMediaService, SocialMediaManager>();
+
+            builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
+            builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
