@@ -36,6 +36,18 @@ namespace RestaurantProject.SignalRApi
             builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
             builder.Services.AddScoped<ICategoryService, CategoryManager>();
 
+            builder.Services.AddScoped<IContactDal, EfContactDal>();
+            builder.Services.AddScoped<IDiscountDal, EfDiscountDal>();
+
+            builder.Services.AddScoped<IDiscountDal, EfDiscountDal>();
+            builder.Services.AddScoped<IDiscountService, DiscountManager>();
+
+            builder.Services.AddScoped<IProductDal, EfProductDal>();
+            builder.Services.AddScoped<IProductService, ProductManager>();
+
+            builder.Services.AddScoped<IFeatureDal, EfFeatureDal>();
+            builder.Services.AddScoped<IFeatureService, FeatureManager>();
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
