@@ -56,5 +56,12 @@ namespace RestaurantProject.SignalRApi.Controllers
             _productService.Update(_mapper.Map<Product>(updateProductDto));
             return Ok("Ürün Güncellenmiştir.");
         }
+
+        [HttpGet("ProductListWithCategory")]
+        public IActionResult ProductListWithCategory()
+        {
+            var value = _productService.GetProductsWithCategories();
+            return Ok(value);
+        }
     }
 }

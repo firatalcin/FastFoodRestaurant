@@ -1,4 +1,5 @@
 ﻿using RestaurantProject.Business.Interfaces;
+using RestaurantProject.Core.DataAccess.Dtos.ProductDto;
 using RestaurantProject.DataAccess.Interfaces;
 using RestaurantProject.Entities.Concrete;
 using System;
@@ -36,6 +37,11 @@ namespace RestaurantProject.Business.Concrete
         public Product GetById(int id)
         {
             return _productDal.GetById(id);
+        }
+
+        public List<ResultProductWithCategoryDto> GetProductsWithCategories()
+        {
+            return _productDal.GetProductsWithCategories();
         }
 
         public void Update(Product entity)
